@@ -25,6 +25,17 @@ You will need to create a folder for each service under ``lib/modules``
 * Create a ``customers`` folder under ``lib/modules``
 
 Standard files: This structure is not mandated by hapi or glue.  I am following the pattern that I found in this [Tutorial](https://medium.com/@dstevensio/manifests-plugins-and-schemas-organizing-your-hapi-application-68cf316730ef#.2nve7u2r0)
+``
+lib
+ | - modules
+ |------|
+        | - customers
+        | -----|
+               | - index.js
+               | - package.json
+               | - customers.js 
+``
+
 
 ### index.js
 The index file is where you should move the route commands for this service.
