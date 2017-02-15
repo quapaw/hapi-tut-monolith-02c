@@ -70,6 +70,7 @@ When we move the service into its own project this will be the actual package.js
 ### XXXXXX.js
 This is the file that holds the handler for the service.
 The route, defined in index.js, points to this file.
+
 customers.js
 ```javascript
 const SampleCustomers = require('./samples/customers');
