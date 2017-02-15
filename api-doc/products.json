@@ -1,0 +1,70 @@
+{
+  "basePath": "/api/v1",
+  "produces": [
+    "application/json"
+  ],
+  "swagger": "2.0",
+  "host": "localhost",
+  "info": {
+    "title": "Hapi Monolith Tutorial 02a",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/products": {
+      "get": {
+        "description": "Pulls all products",
+        "operationId": "getProducts",
+        "summary":     "Get all Products",
+        "tags": [      "Products"    ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "schema": {
+              "properties": {
+                "products": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/Product"
+                  }
+                }
+              }
+            }
+          },
+          "204": {
+            "description": "No products found"
+          },
+          "400": {
+            "description": "Unknown Error",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Error": {
+      "type": "object",
+      "externalDocs": {
+        "description": "Company API Error Handling document",
+        "url": "https://localhost/document/ErrorHandling.html"
+      },
+      "properties": {
+        "code":      {"type": "string"},
+        "message":   {"type": "string"},
+        "requestId": {"type": "string", "format": "guid"}
+      }
+    },
+    "Product": {
+      "type": "object",
+      "properties": {
+        "id":             {"type": "string", "format": "guid"},
+        "name":           {"type": "string"},
+        "description":    {"type": "string"},
+        "minBalance":     {"type": "number"},
+        "interestRate":   {"type": "number"}
+      }
+    }
+  }
+}

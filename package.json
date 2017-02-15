@@ -1,0 +1,20 @@
+{
+  "name": "hapi-tut-mono-02b",
+  "version": "1.0.0",
+  "description": "hapi - tutorial - break the Monolith up - part 2b",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "hapi",
+    "tutorial",
+    "monolith"
+  ],
+  "author": "Scott Jones",
+  "license": "ISC",
+  "dependencies": {
+    "glue": "^4.1.0",
+    "hapi": "^16.1.0"
+  }
+}

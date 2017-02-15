@@ -1,0 +1,23 @@
+{ "products": [
+  {
+    "id": "abcd",
+    "name": "Basic Checking",
+    "description": "Basic Checking - no extras",
+    "minBalance": 100.00,
+    "interestRate": 0.00
+  },
+  {
+    "id": "abce",
+    "name": "Gold Checking",
+    "description": "Gold Checking - Interest Rate",
+    "minBalance": 500.00,
+    "interestRate": 0.02
+  },
+  {
+    "id": "abcf",
+    "name": "Platinum Checking",
+    "description": "Platinum Checking - High Interest Rate, Free Checks",
+    "minBalance": 1000.00,
+    "interestRate": 0.04
+  }
+]}
