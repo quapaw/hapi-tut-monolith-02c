@@ -21,9 +21,11 @@ I used this [Tutorial](https://medium.com/@dstevensio/manifests-plugins-and-sche
 
 
 ## Folder Structure
-We will create a folder for each service under ``lib/modules``
+You will need to create a folder for each service under ``lib/modules``
 * Create a ``customers`` folder under ``lib/modules``
+
 Standard files: This structure is not mandated by hapi or glue.  I am following the pattern that I found in this [Tutorial](https://medium.com/@dstevensio/manifests-plugins-and-schemas-organizing-your-hapi-application-68cf316730ef#.2nve7u2r0)
+
 ### index.js
 The index file is where you should move the route commands for this service.
 You should also export the attributes from the package.json 
@@ -85,7 +87,7 @@ You will need to add a new set of data to register the plugins
   ]
 ```
 
-## changes to main index.js
+## Changes main index.js
 * Remove all references in customers and products service
 * Add a new option object.  This tells glue the relative directory for the plugins
 ```javascript
